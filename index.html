@@ -1,0 +1,57 @@
+<html>
+<head>
+    <link href="2do_ejercicio.css" rel="stylesheet" type="text/css">    
+    <title>Segundo Ejercicio: Formulario</title>
+</head>
+
+<body>
+    <form action="" class="formulario">
+        <h3>Formulario de Registro</h3>
+        <div>
+            <h4 align="left">Datos Personales</h4>
+        </div>
+
+        <div class="col-25" align="left">
+            <label for="nombre" id="name">Nombre:</label>
+        </div>
+        <div class="col-75">
+            <input type="text" name="nombre" id="nombre" required/>
+        </div>
+
+        <div align="left">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required>
+        </div>
+
+        <div align="left">
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" required>
+        </div>
+        
+        <div id="nacimiento" align="left">
+            <label for="nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" name="nacimiento" id="nacimiento" required/>   
+        </div>
+
+        <div align="left">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="correo" required>             
+        </div>
+        
+        <div id="genero" align="left">
+            <label for="email">Genero:</label>
+            <select id="genero" name="genero">
+                <option value="femenino">Femenino</option>
+                <option value="femenino">Masculino</option>
+                <option value="femenino">Otro</option>
+            </select>
+        </div>
+
+        <div>
+            <button onsubmit="return validacion()" onclick="obtenerDatos()">Registrarse</button">
+        </div>
+    </form>
+
+    <script src="2do_ejercicio.js"></script>
+</body>
+</html>
